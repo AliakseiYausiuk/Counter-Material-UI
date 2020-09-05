@@ -3,18 +3,21 @@ import TextField from "@material-ui/core/TextField/TextField";
 
 export type InputItemPropsType = {
   label: string;
+  changeValue: (value: number) => void;
+  value: number | string;
+  err: boolean;
 };
 
 export const InputIten = (props: InputItemPropsType) => {
-  const [value, setValue] = useState("");
-
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
+    props.changeValue(Number(event.currentTarget.value));
   };
 
   return (
     <TextField
-      value={value}
+      error={props.err}
+      helperText={props.err ? "Enter the correct number" : ""}
+      value={props.value}
       label={props.label}
       variant="outlined"
       onChange={handleChange}

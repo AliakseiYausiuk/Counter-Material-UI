@@ -1,14 +1,50 @@
 export const reducer = (state: any, action: any) => {
   switch (action.type) {
     case "INCREMENT": {
-      return { count: state.count + 1 };
+      if (state.count < state.maxValue) {
+        return {
+          ...state,
+          count: state.count + 1,
+        };
+      } else {
+        return {
+          ...state,
+          count: state.count,
+        };
+      }
     }
     case "DECREMENT": {
-      return { count: state.count - 1 };
+      if (state.count <= state.minValue) {
+        return {
+          ...state,
+          count: state.count,
+        };
+      } else {
+        return {
+          ...state,
+          count: state.count - 1,
+        };
+      }
     }
     case "RESET":
-      return { count: state.count = 0 };
-    case "START-VALUE": {
+      return { ...state, count: state.minValue };
+    case "MIN-VALUE": {
+      return { ...state, minValue: action.minValue };
+    }
+    case "MAX-VALUE": {
+      return { ...state, maxValue: action.maxValue };
+    }
+    case "SET": {
+      if (state.minValue === 0 && state.maxValue === 0) {
+        return { ...state, errorCounter: true };
+      } else {
+        return {
+          ...state,
+          count: state.minValue,
+          maxValue: state.maxValue,
+          errorCounter: false,
+        };
+      }
     }
   }
 };
