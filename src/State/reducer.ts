@@ -35,7 +35,7 @@ export const reducer = (state: any, action: any) => {
       return { ...state, maxValue: action.maxValue };
     }
     case "SET": {
-      if (state.minValue === 0 && state.maxValue === 0) {
+      if (state.minValue === state.maxValue) {
         return { ...state, errorCounter: true };
       } else {
         return {
