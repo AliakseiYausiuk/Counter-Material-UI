@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Counter-Material-UI/static/css/main.27fd15f6.chunk.css",
+    "main.js": "/Counter-Material-UI/static/js/main.f8cf2e91.chunk.js",
+    "main.js.map": "/Counter-Material-UI/static/js/main.f8cf2e91.chunk.js.map",
+    "runtime-main.js": "/Counter-Material-UI/static/js/runtime-main.b9cf1068.js",
+    "runtime-main.js.map": "/Counter-Material-UI/static/js/runtime-main.b9cf1068.js.map",
+    "static/js/2.c9feeffc.chunk.js": "/Counter-Material-UI/static/js/2.c9feeffc.chunk.js",
+    "static/js/2.c9feeffc.chunk.js.map": "/Counter-Material-UI/static/js/2.c9feeffc.chunk.js.map",
+    "index.html": "/Counter-Material-UI/index.html",
+    "precache-manifest.106ec3e751c4ad7ea04473d96b5bf5ec.js": "/Counter-Material-UI/precache-manifest.106ec3e751c4ad7ea04473d96b5bf5ec.js",
+    "service-worker.js": "/Counter-Material-UI/service-worker.js",
+    "static/css/main.27fd15f6.chunk.css.map": "/Counter-Material-UI/static/css/main.27fd15f6.chunk.css.map",
+    "static/js/2.c9feeffc.chunk.js.LICENSE.txt": "/Counter-Material-UI/static/js/2.c9feeffc.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b9cf1068.js",
+    "static/js/2.c9feeffc.chunk.js",
+    "static/css/main.27fd15f6.chunk.css",
+    "static/js/main.f8cf2e91.chunk.js"
+  ]
+}
